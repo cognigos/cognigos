@@ -13,6 +13,9 @@ import { ProfileScreen } from './src/screens/ProfileScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
 import { MeditationScreen } from './src/screens/MeditationScreen';
 import { BreathScreen } from './src/screens/BreathScreen';
+import { PhilosophyScreen } from './src/screens/PhilosophyScreen';
+import { NexusScreen } from './src/screens/NexusScreen';
+import { ForbiddenScreen } from './src/screens/ForbiddenScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -82,6 +85,21 @@ export default function App() {
                 name="Breath"
                 component={BreathScreen}
                 options={{ title: 'Breath Engine' }}
+              />
+              <Stack.Screen
+                name="Philosophy"
+                component={PhilosophyScreen}
+                options={{ title: 'Philosophy Tracks' }}
+              />
+              <Stack.Screen
+                name="Nexus"
+                component={NexusScreen}
+                options={{ title: 'The Nexus' }}
+              />
+              <Stack.Screen
+                name="Forbidden"
+                component={ForbiddenScreen}
+                options={{ title: 'Forbidden Library' }}
               />
             </>
           )}
