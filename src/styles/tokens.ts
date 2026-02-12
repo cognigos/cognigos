@@ -1,28 +1,28 @@
 // Design System Tokens
 export const tokens = {
   colors: {
-    // Cognitive Domains
-    crimson: { reasoning: '#8B0000', hover: '#A01010', active: '#701010' },
-    gold: { memory: '#D4AF37', hover: '#FFD700', active: '#B8941F' },
-    violet: { creativity: '#4B0082', hover: '#5B0099', active: '#3B0062' },
-    emerald: { decision: '#50C878', hover: '#60D888', active: '#40B868' },
-    amber: { flexibility: '#FFBF00', hover: '#FFCF20', active: '#DFAF00' },
-    sapphire: { philosophy: '#0F52BA', hover: '#1F62CA', active: '#0F42AA' },
+    // Cognitive Domains (Ancient Deep Blues)
+    crimson: { reasoning: '#1A237E', hover: '#283593', active: '#0D1B5E' }, // Deep Indigo
+    gold: { memory: '#9C7A3C', hover: '#B8941F', active: '#7D5F2E' }, // Ancient Gold
+    violet: { creativity: '#4A148C', hover: '#6A1B9A', active: '#38006B' }, // Deep Purple
+    emerald: { decision: '#1B5E20', hover: '#2E7D32', active: '#0D4711' }, // Forest Green
+    amber: { flexibility: '#BF360C', hover: '#D84315', active: '#9F2C09' }, // Terra Cotta
+    sapphire: { philosophy: '#01579B', hover: '#0277BD', active: '#004578' }, // Deep Sapphire
     
-    // Base
-    obsidian: '#0D0D0D',
-    charcoal: '#1A1A1A',
-    stoneGray: '#2D2D2D',
-    parchment: '#F5E6D3',
-    bronze: '#CD7F32',
-    silver: '#C0C0C0',
-    alabaster: '#F0EAD6',
+    // Base (Ancient Neomorphic Blues)
+    obsidian: '#0A1929', // Deep navy base
+    charcoal: '#132F4C', // Raised surfaces
+    stoneGray: '#1E4976', // Elevated elements
+    parchment: '#E3F2FD', // Light accents
+    bronze: '#8C6239', // Ancient bronze
+    silver: '#B0BEC5', // Stone silver
+    alabaster: '#ECEFF1', // Ancient white
     
     // Semantic
     success: '#00A86B',
     warning: '#FF9500',
     danger: '#DC143C',
-    info: '#00CED1',
+    info: '#0277BD',
   },
   
   fonts: {
@@ -63,24 +63,39 @@ export const tokens = {
   },
   
   shadows: {
+    // Neomorphic shadows (light + dark for depth)
+    neomorphicInset: {
+      shadowColor: '#000814',
+      shadowOffset: { width: -4, height: -4 },
+      shadowOpacity: 0.6,
+      shadowRadius: 8,
+      elevation: -2,
+    },
+    neomorphicOutset: {
+      shadowColor: '#1E4976',
+      shadowOffset: { width: 4, height: 4 },
+      shadowOpacity: 0.4,
+      shadowRadius: 8,
+      elevation: 4,
+    },
     sm: {
-      shadowColor: '#000',
+      shadowColor: '#000814',
       shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.1,
+      shadowOpacity: 0.3,
       shadowRadius: 4,
       elevation: 2,
     },
     md: {
-      shadowColor: '#000',
+      shadowColor: '#000814',
       shadowOffset: { width: 0, height: 4 },
-      shadowOpacity: 0.15,
+      shadowOpacity: 0.4,
       shadowRadius: 8,
       elevation: 4,
     },
     lg: {
-      shadowColor: '#000',
+      shadowColor: '#000814',
       shadowOffset: { width: 0, height: 8 },
-      shadowOpacity: 0.2,
+      shadowOpacity: 0.5,
       shadowRadius: 16,
       elevation: 8,
     },

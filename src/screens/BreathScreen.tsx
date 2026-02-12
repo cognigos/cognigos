@@ -279,6 +279,9 @@ const styles = StyleSheet.create({
     borderRadius: tokens.radius.lg,
     padding: tokens.spacing.lg,
     marginBottom: tokens.spacing.md,
+    borderWidth: 1,
+    borderColor: tokens.colors.stoneGray,
+    ...tokens.shadows.neomorphicOutset,
   },
   patternIcon: {
     fontSize: tokens.fontSizes['3xl'],

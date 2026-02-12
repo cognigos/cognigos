@@ -264,8 +264,10 @@ const styles = StyleSheet.create({
     padding: tokens.spacing.md,
     marginRight: tokens.spacing.sm,
     marginBottom: tokens.spacing.sm,
-    borderWidth: 2,
+    borderWidth: 1,
+    borderColor: tokens.colors.stoneGray,
     alignItems: 'center',
+    ...tokens.shadows.neomorphicOutset,
   },
   nodeIcon: {
     fontSize: tokens.fontSizes['2xl'],
@@ -296,6 +298,9 @@ const styles = StyleSheet.create({
     marginRight: tokens.spacing.sm,
     marginBottom: tokens.spacing.sm,
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: tokens.colors.stoneGray,
+    ...tokens.shadows.neomorphicOutset,
   },
   actionIcon: {
     fontSize: tokens.fontSizes['3xl'],

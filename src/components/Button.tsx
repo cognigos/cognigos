@@ -60,15 +60,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   primary: {
-    backgroundColor: tokens.colors.bronze,
+    backgroundColor: tokens.colors.charcoal,
+    borderWidth: 1,
+    borderColor: tokens.colors.stoneGray,
+    ...tokens.shadows.neomorphicOutset,
   },
   secondary: {
-    backgroundColor: tokens.colors.stoneGray,
+    backgroundColor: tokens.colors.obsidian,
+    borderWidth: 1,
+    borderColor: tokens.colors.charcoal,
+    ...tokens.shadows.sm,
   },
   outline: {
-    backgroundColor: 'transparent',
-    borderWidth: 1,
+    backgroundColor: tokens.colors.charcoal,
+    borderWidth: 2,
     borderColor: tokens.colors.bronze,
+    ...tokens.shadows.neomorphicInset,
   },
   sm: {
     paddingVertical: tokens.spacing.xs,

@@ -16,6 +16,8 @@ const styles = StyleSheet.create({
     backgroundColor: tokens.colors.charcoal,
     borderRadius: tokens.radius.lg,
     padding: tokens.spacing.md,
-    ...tokens.shadows.md,
+    borderWidth: 1,
+    borderColor: tokens.colors.stoneGray,
+    ...tokens.shadows.neomorphicOutset,
   },
 });
