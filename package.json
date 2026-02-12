@@ -1,10 +1,7 @@
 {
   "name": "cognigos",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
-  "expo": {
-    "entryPoint": "./App.tsx"
-  },
+  "main": "index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -19,6 +16,7 @@
     "@react-navigation/native-stack": "^6.9.17",
     "@supabase/supabase-js": "^2.39.0",
     "axios": "^1.6.0",
+    "babel-preset-expo": "^54.0.10",
     "date-fns": "^3.0.0",
     "expo": "^54.0.33",
     "expo-linear-gradient": "~13.0.2",
